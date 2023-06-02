@@ -134,7 +134,7 @@ var ads1 = [ //167
 var balance = 0;
 localStorage.getItem("tickets");
 if (localStorage.getItem("tickets") == null) {
-    balance = balance + 0.1;
+    balance = balance + 1;
     localStorage.setItem("tickets", balance);
 }
 else {
@@ -191,7 +191,7 @@ function open_freespin()
         result.innerHTML = 'You have no tickets, purchase or refill atleast 200 goldencoins to access this feature.'
     }
     else {
-        balance = balance - 0.1;
+        balance = balance - 1;
         localStorage.setItem("tickets", balance);
         tickets.innerHTML = balance;
         }
@@ -239,7 +239,7 @@ function open_earn() {
 
 function tickets() {
     var add = document.getElementById("earn_balance");
-    balance = balance + 0.1;
+    balance = balance + 1;
     localStorage.setItem("tickets", balance);
     add.innerHTML = balance;
     setTimeout(() => {tickets();}, 95500);
