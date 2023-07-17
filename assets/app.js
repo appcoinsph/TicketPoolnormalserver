@@ -12,7 +12,7 @@ tl.fromTo('.home-button4', {opacity: 0}, {opacity: 1, duration: 1}, "-=1");
 tl.fromTo('footer', {opacity: 0}, {opacity: 1, duration: 1});
 
 var links = [ //128
-'https://augailou.com/4/5897748',
+ 
  
 ]
 
