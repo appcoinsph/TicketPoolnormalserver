@@ -1,4 +1,4 @@
-const tl = gsap.timeline({defaults:{ease: 'power1.out'}});
+Iconst tl = gsap.timeline({defaults:{ease: 'power1.out'}});
 tl.to('.text', {y:"0%", duration: 1, stagger: 0.25});
 tl.to('.slider', {y:"-100%", duration: 1.5, delay: 0.5});
 tl.to('.intro', {y:"-100%", duration: 1}, "-=1");
@@ -242,7 +242,7 @@ function open_chatbox() {
   random_num = Math.floor((Math.random() * 128) + 0);
     link = links[random_num];
     ad1 = ads1[random_num];
-    add.innerHTML = '<center><button class="back-button" onclick="back_home()">Back</button><h1 id="logo"><a href="./index.html">kindly post your message , create topics and monitor your golden coins in progress</a></h1><div id="earn_balance">' + balance + '</div><iframe width="700" height="1800" style="background-color: white;" src="https://02shibanormalserver.netlify.app&index=' + random_num +
+    add.innerHTML = '<center><button class="back-button" onclick="back_home()">Back</button><h1 id="logo"><a href="./index.html">kindly post your message , create topics and monitor your golden coins in progress</a></h1><div id="earn_balance">' + balance + '</div><iframe width="700" height="1800" style="background-color: white;" src="https://02shibanormalserver.netlify.app/&index=' + random_num +
 '&autoplay=1&mute=1&loop=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br></br><iframe src="https://my.cbox.ws/HIGHLIGHTSRADIO" allow="microphone; camera; fullscreen; autoplay; display-capture" style="width: 560; height: 500; overflow: hidden; border: 0px none; background-color: transparent;"></iframe>	<br>' + ad1 + '<button class="home-button" style="top: 1% ;" onclick="back_home()">Stop Earning</button></center>';
   
   window.open(link);
